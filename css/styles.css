@@ -114,6 +114,9 @@ body {
 .header-link:focus {
   color: var(--accent-color);
 }
+.header-link-color {
+  color: var(--accent-color);
+}
 .connect-list {
   display: flex;
   margin-left: auto;
@@ -180,13 +183,11 @@ body {
   border-radius: 4px;
   display: block;
   margin: 0 auto;
-  transition: background-color var(--transit), color var(--transit),
-    box-shadow var(--transit);
+  transition: background-color var(--transit), box-shadow var(--transit);
 }
 .main-btn:hover,
 .main-btn:focus {
   background-color: var(--accent-color, #404bbf);
-  color: var(--first-btn-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* --------ABOUT-------- */
@@ -568,6 +569,7 @@ font-weight: 400;*/
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  cursor: pointer;
   display: flex;
   padding: 0;
   justify-content: center;
